@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>calculate average marks:</h1>
+
+        <form action="{{ url_for('new_form') }}" method="post">
+
+          Enter the mark: <input type="text" name="maths" placeholder="maths" required="required" /> <br>
+          Enter the mark:  <input type="text" name="science" placeholder="science" required="required" /> <br>
+          Enter the mark:  <input type="text" name="history" placeholder="history" required="required" /> <br>
+             <br>
+            <button type="submit"> calculate marks</button>
+
+        </form>
+        <br>the average marks is {{score}} <br>
+    </div>
+</body>
+</html>
